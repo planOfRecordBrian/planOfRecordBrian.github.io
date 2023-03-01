@@ -1,0 +1,131 @@
+@import url('satoshi.css');
+
+
+html{
+    background-color: black;
+}
+
+div{
+    background-color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Satoshi-Bold', sans-serif;
+    color: rgb(164, 34, 34);
+}
+
+p, a {
+    font-family: 'Satoshi-Light', sans-serif;
+    /* font-weight: 200; */
+    color: white;
+}
+
+.container-fluid{
+    background-color: black;
+    color: white;
+    padding: 0 2% 0 2%;
+
+}
+
+/* Bootstrap Nav */
+
+.navbar-brand{
+    font-size: 1rem;
+}
+.nav-item{
+    padding: 0 2px;
+
+}
+
+.nav-icon {
+    width: 3rem;
+}
+/* End of Bootsrap Nav */
+
+/* Main Text Section */
+
+#parent-content {
+    position: static;
+
+}
+
+.text-column {
+    background: none;
+}
+
+.sub-title{
+    color: whitesmoke;
+    font-family: "Satoshi-Light", sans-serif;
+    
+}
+
+.body-copy{
+    position: relative;
+    font-family: "Satoshi-Light", sans-serif;
+    font-weight: 200;
+    background: none;
+    z-index: 2;
+    font-size: 1rem;
+}
+
+
+/* Grid lines */
+.swiss-grid{
+    position: absolute;
+    top: 44px;
+    width: 100%;
+    background: none;
+    opacity: 100%;
+    z-index: 1;   
+}
+
+hr{
+    height: 8px;
+    border-top: 1px solid white;
+}
+
+hr.mobile-lines{
+    visibility: hidden;
+}
+
+
+
+
+/* Images */
+
+.primary-image{
+    /* position: absolute; */
+    top: 40%;
+    left:10%;
+    right: 10%;
+    margin-top: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 0;
+}
+
+.primary-video {
+    margin-top: 100px;
+}
+
+.background-image{
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.footer {
+    height: 100px;
+    margin-top: 100px;
+    font-size: 1rem;
+    text-align: right;
+}
+/* @ MEDIA */
+
+@media (max-width: 992px) {
+    hr.mobile-lines {
+        visibility: visible;
+    }
+}
+
+
