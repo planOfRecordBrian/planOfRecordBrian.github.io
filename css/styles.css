@@ -97,17 +97,26 @@ h1, h2, h3, h4, h5, h6 {
     background: none;
     z-index: 2;
     font-size: 1rem;
+    margin-top: 0;
+    padding-top: 0;
+    top: -8px;
 }
 
 
 /* Grid lines */
 .swiss-grid{
     position: absolute;
-    top: 76px;
-    width: 100%;
+    top: 96px;
+    width: 96%;
     background: none;
     opacity: 100%;
-    z-index: 1;   
+    z-index: 0; 
+     
+}
+
+.top-rule{
+    margin: 0;
+    padding: 0;
 }
 
 hr{
