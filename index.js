@@ -1,13 +1,13 @@
-$('.toggle').click(function () {
-    "use strict";
-    $('nav ul').slideToggle();
-});
 
+// Plan of Record Button
 
+var pan = document.getElementsByClassName("panel")[0];
+var acc = document.getElementsByClassName("accordion")[0];
 
-$(window).resize(function () {
-    "use strict";
-    if ($(window).width() > 780) {
-        $('nav ul').removeAttr('style');
-    }
+acc.addEventListener("click", function() {
+   if (pan.style.maxHeight) {
+     pan.style.maxHeight = null;
+   } else {
+     pan.style.maxHeight = pan.scrollHeight + "px";
+}
 });

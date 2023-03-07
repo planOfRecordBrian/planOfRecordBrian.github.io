@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
     color: rgb(164, 34, 34);
 }
 
-p, a {
+ a {
     font-family: 'Satoshi-Light', sans-serif;
     /* font-weight: 200; */
     color: white;
@@ -42,6 +42,37 @@ p, a {
 }
 /* End of Bootsrap Nav */
 
+/* Plan of Record Drop Down */
+
+.accordion {
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    z-index: 10;
+}
+
+.active, .accordion:hover {
+    background-color: #111;
+}
+
+.panel {
+    /* display:none; */
+   
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+   
+}
+
+
+/* End of Plan of Record Drop Down */
+
 /* Main Text Section */
 
 #parent-content {
@@ -55,13 +86,13 @@ p, a {
 
 .sub-title{
     color: whitesmoke;
-    font-family: "Satoshi-Light", sans-serif;
+    font-family: "Satoshi-Regular", sans-serif;
     
 }
 
 .body-copy{
     position: relative;
-    font-family: "Satoshi-Light", sans-serif;
+    font-family: "Satoshi-Regular", sans-serif;
     font-weight: 200;
     background: none;
     z-index: 2;
@@ -72,7 +103,7 @@ p, a {
 /* Grid lines */
 .swiss-grid{
     position: absolute;
-    top: 44px;
+    top: 76px;
     width: 100%;
     background: none;
     opacity: 100%;
@@ -119,6 +150,7 @@ hr.mobile-lines{
     margin-top: 100px;
     font-size: 1rem;
     text-align: right;
+    color: #666;
 }
 /* @ MEDIA */
 
