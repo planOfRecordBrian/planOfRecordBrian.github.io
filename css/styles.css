@@ -136,6 +136,10 @@ hr.mobile-lines{
     
 }
 
+.nocursor {
+    cursor: none;
+}
+
 /* Images */
 
 .primary-image{
