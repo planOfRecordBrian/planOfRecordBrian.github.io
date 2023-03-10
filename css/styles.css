@@ -57,9 +57,9 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 10;
 }
 
-.active, .accordion:hover {
+/* .active, .accordion:hover {
     background-color: #111;
-}
+} */
 
 .panel {
     /* display:none; */
@@ -114,10 +114,11 @@ h1, h2, h3, h4, h5, h6 {
      
 }
 
-.top-rule{
+.top-rule, .bottom-rule{
     margin: 0;
     padding: 0;
 }
+
 
 hr{
     height: 8px;
@@ -128,8 +129,16 @@ hr.mobile-lines{
     visibility: hidden;
 }
 
+/* P5JS */
 
+.test-canvas {
+    margin-top: 42px;
+    
+}
 
+.nocursor {
+    cursor: none;
+}
 
 /* Images */
 
