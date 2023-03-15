@@ -38,11 +38,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-icon {
+    padding-top: 0;
     width: 3rem;
 }
-/* End of Bootsrap Nav */
+/* End of Bootstrap Nav */
 
 /* Plan of Record Drop Down */
+
+.title-line {
+    margin-bottom: 24px;
+}
 
 .accordion {
     background-color: black;
@@ -106,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Grid lines */
 .swiss-grid{
     position: absolute;
-    top: 96px;
+    top: 88px;
     width: 96%;
     background: none;
     opacity: 100%;
@@ -132,7 +137,7 @@ hr.mobile-lines{
 /* P5JS */
 
 .test-canvas {
-    margin-top: 42px;
+    margin-top: 24px;
     
 }
 
@@ -166,7 +171,7 @@ hr.mobile-lines{
 .footer {
     height: 100px;
     margin-top: 100px;
-    font-size: 1rem;
+    font-size: .75rem;
     text-align: right;
     color: #666;
 }
