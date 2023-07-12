@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Plan of Record</title>
+
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+	<meta http-equiv="Pragma" content="no-cache"/>
+	<meta http-equiv="Expires" content="0"/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<script src="./main.js"></script>
+	<link rel="stylesheet" href="./normalize.css">
+	<link rel="stylesheet" href="./styles.css">
+	<link rel="stylesheet" href="./mobile.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+        // https://dashboard.emailjs.com/admin/account
+        // emailjs.init('Sn5Hs5GhBlrkVUpnF');
+        emailjs.init('L1EhWtLXMdt9Wu3W0');
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function() {
+        const emailNotice = document.getElementById('emailSubmitNotice');
+        const contactForm = document.getElementById('contactForm')
+        contactForm.addEventListener('submit', function(event) {
+          event.preventDefault();
+          // generate a five digit number for the contact_number variable
+          this.contact_number.value = Math.random() * 100000 | 0;
+          // these IDs from the previous steps
+          // emailjs.sendForm("service_j1ojotu","template_t6lw6es", this)
+          emailjs.sendForm("service_9alek42","template_rol5epn", this)
+            .then(function() {
+                console.log('SUCCESS!');
+
+                emailNotice.innerHTML = "<span>Thank you! We'll get back to you shortly</span>"
+                emailNotice.style.display = 'block'
+                document.getElementById('contactForm').scrollIntoView();
+            }, function(error) {
+                console.log('FAILED...', error);
+                emailNotice.innerHTML = "<span>Oops! Something went wrong, please try again.</span>"
+                emailNotice.style.display = 'block'
+                document.getElementById('contactForm').scrollIntoView();
+            });
+        });
+      }
+    </script>
+</head>
+<body>
+	<div class="basketball desktop-only"><img src="./assets/cursor.png" alt=""></div>
+	<header>
+		<ul class="desktop-only">
+			<li><a href="./index.html">Plan of Record</a></li>
+			<li><a href="./about.html">About</a></li>
+			<li><a href="./approach.html">Approach</a></li>
+			<li><a href="./contact.html">Contact</a></li>
+		</ul>
+
+		<ul class="mobile-only">
+			<li><a href="./index.html">Plan of Record</a></li>
+			<li id="menuToggle" class="menu-toggle"><a href="#">Menu</a></li>
+		</ul>
+	</header>
+
+	<section class="mobile-menu mobile-only closed">
+		<ul class="mobile-only">
+			<li><a href="./index.html">Plan of Record</a></li>
+			<li id="closeToggle" class="menu-toggle"><a href="#"><img src="./assets/close.png" alt=""></a></li>
+		</ul>
+		<ul>
+			<li><a href="./index.html">Home</a></li>
+			<li><a href="./about.html">About</a></li>
+			<li><a href="./approach.html">Approach</a></li>
+			<li><a href="./contact.html">Contact</a></li>
+		</ul>
+	</section>
+
+	<section class="contactpage">
+		<div class="fade-overlay"></div>
+		<div class="three-column">
+			
+			<div class="about-title">
+	  		<h2>Say Hi </h2>
+	  	</div>
+	  	<div class="contactform grid-span-2">
+		    <form id="contactForm">
+	  		<p>Looking for a creative studio to help you rebrand or enhance the experience of your brand? Let’s chat.</p>
+	  		<p id="emailSubmitNotice" class="email-submit-notice"></p>
+		        <input type="hidden" name="contact_number">
+		        <fieldset>
+			        <textarea rows="11" name="message"></textarea>
+		        </fieldset>
+		        <div class="form-grid">
+			        <fieldset>
+				        <input type="email" name="user_email" placeholder="Email*" required>
+			        </fieldset>
+			        <fieldset>
+				        <input type="text" name="user_phone" placeholder="Phone">
+			        </fieldset>
+			        <fieldset>
+				        <input type="text" name="user_name" placeholder="Name">
+			        </fieldset>
+		        </div>
+		        <div class="form-submit">
+		        	<input type="submit" value="Submit">
+		        </div>
+		    </form>
+	  	</div>
+		</div>
+		<div class="three-column">
+			<div></div>
+	  	<div class="contactemail">
+	  		<p class="secondary-title">Contact</p>
+	  		<div class="info">
+	  			<p class="secondary-title"><a href="mailto:info@planofrecord.xyz" target="_blank">info@planofrecord.xyz</a></p>
+	  			<!-- <p class="small">The Junction <br>Toronto</p> -->
+	  		</div>
+	  	</div>
+	  </div>
+	</section>
+
+    <footer>
+		<div class="left">
+			<p>© 2023 Plan of Record<span class="desktop-only">. All rights reserved</span></p>
+		</div>
+		<div class="right">
+			<ul>
+				<li><a href="https://www.instagram.com/planofrecord/" target="_blank">Instagram</a></li>
+				<li><a href="https://www.linkedin.com/company/plan-of-record/about/" target="_blank">LinkedIn</a></li>
+				<li class="desktop-only"><a href="mailto:info@planofrecord.xyz" target="_blank">info@planofrecord.xyz</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

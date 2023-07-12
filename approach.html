@@ -9,8 +9,6 @@
 	<meta http-equiv="Pragma" content="no-cache"/>
 	<meta http-equiv="Expires" content="0"/>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 
 	<script src="./main.js"></script>
 	<link rel="stylesheet" href="./normalize.css">
@@ -46,66 +44,53 @@
 		</ul>
 	</section>
 
-	<section class="homepage">
-		<div class="fade-overlay"></div>
-		<div class="video-wrapper desktop-only">
-			<span class="plan">Plan</span> 
-			<span class="of">of</span> 
-			<span class="record">Record</span>
-			<video class="desktop-only" muted autoplay playsinline loop loading="lazy" poster="./assets/videoBanner.png">
-				<source src="./assets/PoR_Reel.mp4" type="video/mp4">
-			</video>
-		</div>
-		<div class="mobile-only">
-			<video class="mobile-only" muted autoplay playsinline loop loading="lazy" poster="./assets/videoBanner.png">
-				<source src="./assets/PoR_Reel.mp4" type="video/mp4">
-			</video>
-		</div>
-		<h1 class="mobile-only">Plan of Record is a Toronto-based design studio  specializing in brand identity and experiences.</h1>
-
-		<div class="about-pillars mobile-only">
+  <section class="approachpage">
+  	<div class="fade-overlay"></div>
+  	<div class="approach-title">
+  		<h2>Our approach is playful and experimental. <br> We prioritize strategic thinking and conceptually driven work.</h2>
+  	</div>
+  	<div class="about-pillars">
   		<div class="services three-column">
   			<div>
-  				<p class="secondary-title">Design</p>
+  				<p class="secondary-title">Clients</p>
+  				<p>We collaborate with individuals and organizations who have a purpose, sharing a common drive for meaningful causes and ideas.</p>
+  				<p>We work in, but are not restricted to these industries:</p>
   				<ul>
-  					<li>Brand Identity</li>
-  					<li>Brand Strategy</li>
-  					<li>Creative Direction</li>
-  					<li>Art Direction</li>
-  					<li>Signage</li>
-  					<li>Graphic Design</li>
+  					<li>Arts & Culture</li>
+  					<li>Consumer Tech</li>
+  					<li>FinTech</li>
+  					<li>Education</li>
+  					<li>Healthcare</li>
+  					<li>Hospitality</li>
+  					<li>Media</li>
+  					<li>Non-Profit</li>
+  					<li>Startup</li>
   				</ul>
   			</div>
   			<div>
-  				<p class="secondary-title">Digital Experiences</p>
-  				<ul>
-  					<li>Mixed Reality</li>
-  					<li>Motion</li>
-  					<li>Prototyping</li>
-  					<li>UX/UI Design</li>
-  				</ul>
+  				<p class="secondary-title">Capabilities</p>
+  				<p>As technology continues to shape industries, it’s imperative for businesses to embrace the digital landscape as the foundation of their visual identity. </p>
+  				<p>We blend design expertise with technology, to help brands create meaningful, unique brand experiences.</p>
   			</div>
   			<div>
-  				<p class="secondary-title">Marketing</p>
-  				<ul>
-  					<li>Marketing Collateral</li>
-  					<li>Copywriting</li>
-  				</ul>
+  				<p class="secondary-title">Collaborators</p>
+  				<p>We collaborate with a network of strategists, type designers, illustrators, developers and copywriters to deliver projects across multiple disciplines and media.</p>
   			</div>
   		</div>
   	</div>
 
-  	<div class="about-inquiries mobile-only">
-  		<p class="secondary-title">Inquiries</p>
-  		<p><a href="mailto:info@planofrecord.xyz" target="_blank">info@planofrecord.xyz</a></p>
-  	</div>
-	</section>
+  </section>
 
 	<footer>
 		<div class="left">
-			<p>© 2023 Plan of Record<span class="desktop-only">. All rights reserved</span></p>
+			<p class="desktop-only">© 2023 Plan of Record<span>. All rights reserved</span></p>
+
+			<p class="mobile-only" style="margin-left: -30px;">© 2023 Plan of Record</p>
 		</div>
 		<div class="right">
+			<div>
+				<p><span class="bold">With Respect</span>—Plan of Record acknowledges the Huron-Wendat, the Seneca, and the Mississaugas of the Credit First Nation people, the traditional custodians of this land. We are grateful to have the opportunity to work on this land.</p>
+			</div>
 			<ul>
 				<li><a href="https://www.instagram.com/planofrecord/" target="_blank">Instagram</a></li>
 				<li><a href="https://www.linkedin.com/company/plan-of-record/about/" target="_blank">LinkedIn</a></li>
@@ -116,7 +101,10 @@
 
 	<script>
     document.addEventListener("DOMContentLoaded", () => {
-      
+      window.setTimeout(function() {
+      	console.log('overlay add fade')
+        document.querySelector('.fade-overlay').classList.add('faded')
+      }, 230);
     });
   </script>
 	
