@@ -225,6 +225,7 @@ footer {
 
 footer .left p {
 	font-size: 10px;
+	letter-spacing: .025em;
 }
 
 footer .right p {
