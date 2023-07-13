@@ -368,6 +368,11 @@ video.desktop-only {
 	font-size: var(--main-font-size);
 	line-height: var(--main-line-height);
 	letter-spacing: var(--main-letter-spacing);
+	
+}
+
+.email {
+	letter-spacing: var(--tertiary-heading-letter-spacing);
 }
 
 .about-team {
