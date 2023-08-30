@@ -341,6 +341,11 @@ video.desktop-only {
     letter-spacing: normal;
 }
 
+.aboutpage-specialparagraph {
+		font-size: var(--tertiary-heading-font-size);
+		line-height: var(--tertiary-heading-font-line-height);
+		letter-spacing: var(--tertiary-heading-letter-spacing);	 
+}
 
 .secondary-title a {
 	color: var(--primary-font-color);
